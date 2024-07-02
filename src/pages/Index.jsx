@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
@@ -17,7 +16,7 @@ const Index = () => {
               <CardTitle>Introduction</CardTitle>
             </CardHeader>
             <CardContent>
-              <Image src="/images/proa_boat_intro.jpg" alt="Proa Boat Introduction" width={600} height={400} className="my-4" />
+              <img src="/images/proa_boat_intro.jpg" alt="Proa Boat Introduction" width={600} height={400} className="my-4" />
               <p>
                 Welcome to our blog about proa boats. In this blog, we will explore the fascinating world of proa boats, their history, design, and advantages.
               </p>
@@ -31,7 +30,7 @@ const Index = () => {
               <CardTitle>History</CardTitle>
             </CardHeader>
             <CardContent>
-              <Image src="/images/proa_boat_history.jpg" alt="Proa Boat History" width={600} height={400} className="my-4" />
+              <img src="/images/proa_boat_history.jpg" alt="Proa Boat History" width={600} height={400} className="my-4" />
               <p>
                 Proa boats have a rich history that dates back centuries. They were originally used by the Austronesian people for long-distance voyaging across the Pacific Ocean.
               </p>
