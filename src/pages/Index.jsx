@@ -1,15 +1,67 @@
-// Update this page (the content is just a fallback if you fail and example)
+import React from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
-      <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
-        <p className="text-center">
-          Chat with the agent to start making edits.
-        </p>
-      </div>
+    <div className="container mx-auto p-4">
+      <header className="text-center my-8">
+        <h1 className="text-4xl font-bold">Proa Boats Blog</h1>
+        <p className="text-lg text-gray-600">Exploring the unique world of proa boats</p>
+      </header>
+      <main>
+        <section className="my-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>Introduction</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Welcome to our blog about proa boats. In this blog, we will explore the fascinating world of proa boats, their history, design, and advantages.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+        <Separator />
+        <section className="my-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>History</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Proa boats have a rich history that dates back centuries. They were originally used by the Austronesian people for long-distance voyaging across the Pacific Ocean.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+        <Separator />
+        <section className="my-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>Design</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                The design of proa boats is unique and efficient. They typically have an asymmetrical hull and are designed to sail with the wind on either side.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+        <Separator />
+        <section className="my-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>Advantages</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Proa boats offer several advantages, including speed, stability, and the ability to sail in shallow waters. They are also relatively easy to build and maintain.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+      </main>
     </div>
   );
 };
